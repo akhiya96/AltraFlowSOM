@@ -1,22 +1,18 @@
 # AltraFlowSOM
 
-AltraFlowSOM is a semi-supervised clustering framework for high-dimensional Imaging Mass Cytometry data.
+A semi-supervised, two-layer SuperSOM framework for cell phenotyping in Imaging Mass Cytometry (IMC) data, developed for autoimmune disease cohorts (lupus nephritis and Sjögren's syndrome).
 
 ## Overview
 
-The method combines:
+AltraFlowSOM extends the classical FlowSOM approach with a two-layer Self-Organizing Map (SuperSOM) architecture. It is designed to improve rare cell population detection, notably regulatory T cells (Tregs), in high-dimensional IMC panels, while remaining interpretable and reproducible across patient cohorts.
 
-- Protein-marker expression
-- Manual cell labels
-- semi superivsed SOM-based clustering
+Key design choices:
 
-## Requirements
-- R
-- Bioconductor
-- FlowSOM
-- kohonen
-- SingleCellExperiment
+40×40 SOM grid for high-resolution cluster granularity
+Plain majority-vote annotation, preserving true labels on training cells
+Deterministic, reproducible outputs aggregated by mean across multiple runs
 
-## Installation
-install.packages("kohonen")
-BiocManager::install("FlowSOM")
+# Install required packages
+install.packages(c("kohonen", "FlowSOM", "dplyr", "ggplot2", "pheatmap"))
+
+
