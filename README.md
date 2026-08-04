@@ -20,13 +20,10 @@ Key design choices:
 
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/cd291288-67e6-4d87-bd29-50db1231d6c8" />
 
-# Why "semi-supervised"?
-
-The semi-supervised character of AltraFlowSOM comes directly from its Leave-One-ROI-Out (LOOCV) evaluation scheme. In each fold, cells from all ROIs except the held-out one retain their true, known labels during SOM training and majority-vote annotation, this is the supervised component. Cells in the held-out ROI are treated as unlabeled: their phenotype is inferred purely from cluster assignment, with no access to ground truth — this is the unsupervised component. Each fold therefore combines labeled and unlabeled data simultaneously, rather than the model being fully supervised (trained only on labels) or fully unsupervised (blind to labels entirely).
-
 # Dependencies
 
 AltraFlowSOM is built in R and relies on the following packages:
+
 library(kohonen)   
 library(pbapply)  
 library(stringr)   
