@@ -1,5 +1,5 @@
 # AltraFlowSOM
-A semi-supervised, multi-layer SuperSOM framework for cytometry data clustering, integrating high-dimensional cellular measurements with auxiliary biological priors — applied here to IMC cell phenotyping in autoimmune disease cohorts (lupus nephritis and Sjögren's syndrome).
+A semi-supervised, multi-layer SuperSOM framework for cytometry data clustering, integrating high-dimensional cellular measurements with auxiliary biological priors,  applied here to IMC cell phenotyping in autoimmune disease cohorts (lupus nephritis and Sjögren's syndrome).
 
 # Overview
 We developed AltraFlowSOM, a semi-supervised clustering framework designed to integrate high-dimensional cytometry data with auxiliary biological priors. Its global workflow is strategically adapted from FlowSOM, a widely adopted framework for cytometry data analysis.
