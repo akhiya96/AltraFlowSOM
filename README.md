@@ -1,6 +1,6 @@
 # AltraFlowSOM
 
-A semi-supervised, two-layer SuperSOM framework for cell phenotyping in Imaging Mass Cytometry (IMC) data, developed for autoimmune disease cohorts (lupus nephritis and Sjögren's syndrome).
+A semi-supervised, two-layer SuperSOM framework for cell phenotyping in Imaging Mass Cytometry (IMC) data, developed for autoimmune disease cohorts .
 
 ## Overview
 
