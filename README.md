@@ -18,7 +18,8 @@ Key design choices:
 •	Rare-type handling disabled by default, keeping annotation logic transparent and reproducible
 •	Deterministic, reproducible outputs aggregated by mean across multiple runs
 
-<img width="1119" height="408" alt="1_copy" src="https://github.com/user-attachments/assets/b1b1d898-09f0-4ed7-8712-cc7d388addb7" />
+<img width="865" height="1184" alt="image" src="https://github.com/user-attachments/assets/6f5bcfcb-a5bf-4ab4-8881-9797e0ca5727" />
+
 
 # Dependencies
 
