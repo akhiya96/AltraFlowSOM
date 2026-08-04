@@ -29,4 +29,8 @@ library(kohonen)
 library(pbapply)  
 library(stringr)   
 
+# Test Data: Levine_13dim
+13-dimensional mass cytometry (CyTOF) data set, consisting of protein expression levels for n = 167,044 cells, p = 13 protein markers (dimensions), and k = 24 manually gated cell populations (clusters). Cluster labels are available for 49% (81,747) of the cells.  
+
+Levine et al. (2015). Data-Driven Phenotypic Dissection of AML Reveals Progenitor-like Cells that Correlate with Prognosis. Cell,. http://www.sciencedirect.com/science/article/pii/S0092867415006376
 
