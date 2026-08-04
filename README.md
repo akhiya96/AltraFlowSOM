@@ -6,6 +6,7 @@ Following this established algorithm, AltraFlowSOM utilizes a 3-step hierarchica
 1.	Topological Mapping & Training: based on the foundational Self-Organizing Map (SOM) theory (Kohonen), to condense high-dimensional cellular data into representative prototypes.
 2.	Meta-Clustering: prototypes are subsequently grouped into higher-level clusters representing distinct biological populations.
 3.	Prediction: each individual cell is associated with its closest prototype and corresponding meta-cluster, enabling scalable annotation of large cytometry datasets.
+   
 The primary innovation of AltraFlowSOM lies in its transition from a single-layer unsupervised model to a multi-layer semi-supervised architecture. This is implemented through the Super-SOM (supersom) algorithm, an extension of the Kohonen map that allows for the simultaneous training of multiple heterogeneous data sources (layers) while maintaining a shared map topology. (The supersom algorithm is available as part of the kohonen R package, available on CRAN at: https://cran.r-project.org/package=kohonen).
 
 Key design choices:
