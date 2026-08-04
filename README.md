@@ -1,7 +1,5 @@
 # AltraFlowSOM
-A semi-supervised, multi-layer SuperSOM framework for cytometry data clustering, integrating high-dimensional cellular measurements with auxiliary biological priors,  applied here to IMC cell phenotyping in autoimmune disease cohorts (Lupus Nephritis and Sjögren's syndrome).
 
-# Overview
 We developed AltraFlowSOM, a semi-supervised clustering framework designed to integrate high-dimensional cytometry data with auxiliary biological priors. Its global workflow is strategically adapted from FlowSOM, a widely adopted framework for cytometry data analysis.
 
 Following this established algorithm, AltraFlowSOM utilizes a 3-step hierarchical architecture:
@@ -10,12 +8,10 @@ Following this established algorithm, AltraFlowSOM utilizes a 3-step hierarchica
 3.	Prediction: each individual cell is associated with its closest prototype and corresponding meta-cluster, enabling scalable annotation of large cytometry datasets.
 The primary innovation of AltraFlowSOM lies in its transition from a single-layer unsupervised model to a multi-layer semi-supervised architecture. This is implemented through the Super-SOM (supersom) algorithm, an extension of the Kohonen map that allows for the simultaneous training of multiple heterogeneous data sources (layers) while maintaining a shared map topology. (The supersom algorithm is available as part of the kohonen R package, available on CRAN at: https://cran.r-project.org/package=kohonen).
 
-AltraFlowSOM's architecture enables cytometry measurements to be jointly modeled with auxiliary biological priors, thereby guiding cluster identification using both data-driven and prior-informed information. Each stage of the workflow is detailed in the following sections.
-
 Key design choices:
-•	SOM grid for high-resolution cluster granularity
+•	20x20 SOM grid for high-resolution cluster granularity
 •	Plain majority-vote annotation, preserving true labels on training cells
-•	Rare-type handling disabled by default, keeping annotation logic transparent and reproducible
+•	Identification of rare cell population
 •	Deterministic, reproducible outputs aggregated by mean across multiple runs
 
 <img width="865" height="1184" alt="image" src="https://github.com/user-attachments/assets/6f5bcfcb-a5bf-4ab4-8881-9797e0ca5727" />
