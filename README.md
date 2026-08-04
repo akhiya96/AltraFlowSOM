@@ -27,8 +27,8 @@ The semi-supervised character of AltraFlowSOM comes directly from its Leave-One-
 # Dependencies
 
 AltraFlowSOM is built in R and relies on the following packages:
-library(kohonen)   # SuperSOM / SOM implementation
-library(pbapply)   # progress-tracked apply functions
-library(stringr)   # string handling utilities
+library(kohonen)   
+library(pbapply)  
+library(stringr)   
 
 
